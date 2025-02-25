@@ -1,0 +1,183 @@
+.slider {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+.swiper-slide:hover .responsive {
+    filter: invert(10%);
+}
+.slider .list {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+.slider .list .item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.slider .list .item .content {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    width: 80%;
+    max-width: 1140px;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    text-shadow: 0 5px 10px #0004;
+}
+.button {
+    display: inline-flex;
+    padding: 1.2rem 3rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    font-size: 3rem;
+    text-decoration: none;
+}
+.button a {
+    font-size: 1.5rem;
+}
+.title {
+    font-size: 3rem;
+    text-align: left;
+    color: white;
+    margin-top: -5rem;
+    margin-left: 5rem;
+    max-width: 50rem;
+    margin-bottom: 0.5rem;
+}
+.description {
+    font-size: 1rem;
+    left: 10%;
+    color: black;
+    padding: 1rem 0;
+    line-height: 1.5;
+    margin-left: 5rem;
+    max-width: 50rem;
+    margin-bottom: 0.5rem;
+}
+.amount-playdetails {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 5rem;
+    gap: 10px;
+    flex-direction: column;
+}
+.amount {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0;
+}
+.items-text {
+    font-size: 1rem;
+    color: black;
+    text-align: right;
+    margin: 0;
+}
+.btn {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+.btn:hover {
+    background-color: #f0f0f0;
+    color: black;
+    border-color: #222;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: transparent;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: transparent;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 2rem;
+}
+.responsive {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.8rem;
+        margin-left: 1rem;
+    }
+    .description {
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+    .amount-playdetails {
+        margin: 1rem auto;
+        flex-direction: column;
+    }
+    .amount {
+        font-size: 1.1rem;
+        text-align: center;
+        margin-left: 10px;
+    }
+    .items-text {
+        font-size: 0.85rem;
+        text-align: center;
+    }
+    .btn {
+        margin: 1rem auto;
+        padding: 0.3rem 0.6rem;
+    }
+}
+    
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.8rem;
+        margin-left: 1rem;
+    }
+    .description {
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+    .amount-playdetails {
+        margin: 1rem auto;
+        flex-direction: column;
+    }
+    .amount {
+        font-size: 1.1rem;
+        text-align: center;
+        margin-left: 10px;
+    }
+    .items-text {
+        font-size: 0.85rem;
+        text-align: center;
+    }
+    .btn {
+        margin: 1rem auto;
+        padding: 0.3rem 0.6rem;
+    }
+}

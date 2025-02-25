@@ -1,0 +1,43 @@
+.bestproduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-top: 50px;
+    width: 90%;
+    margin: 20px auto;
+    color: black;
+}
+.bestproduct h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+} 
+.bestproduct hr {
+    width: 150px;
+    height: 3px;
+    background: #000000;
+    margin-bottom: 30px;
+}
+.best-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.best-item > div {
+    display: flex;
+    flex-direction: column;
+    width: 250px; 
+    height: 350px; 
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.best-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; 
+    display: block;
+    margin: 0 auto;
+}

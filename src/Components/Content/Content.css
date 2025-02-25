@@ -1,0 +1,23 @@
+.contents {
+    text-align: center;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    padding-top: 30px;
+}
+.contents a {
+    text-decoration: none;
+    color: red;
+}
+.contents h3 {
+    color: #000000;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+.contents p {
+    color: #000000;
+    padding-bottom: 50px;
+}

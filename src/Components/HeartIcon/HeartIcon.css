@@ -1,0 +1,22 @@
+.hearticon {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 25px;
+    transition: transform 0.2s ease;
+}
+.hearticon:hover {
+    transform: scale(1.2);
+}
+.hearticon svg {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.2s ease;
+}
+.hearticon:hover svg {
+    transform: scale(1.2);
+}
